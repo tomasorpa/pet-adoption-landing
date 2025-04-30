@@ -148,55 +148,29 @@
       <h2 class="page-section-title">Meet Out Friends</h2>
       <div class="pet-filter">
         <p>Show me:</p>
-        <button href="">All Pets</button>
-        <button href="">Only Dogs</button>
-        <button href="">Only Cats</button>
+        <button href="" data-filter="all" class="active">All Pets</button>
+        <button href="" data-filter="dog" >Only Dogs</button>
+        <button href="" data-filter="cat" >Only Cats</button>
       </div>
       <div class="pet-cards--container">
-        <div class="pet-card">
-          <div class="card-text">
-            <h3>Barksalot</h3>
-            <p>
-              Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery, and playing fetch. lorem
-            </p>
-            <p class="pet-age">2 years old</p>
+       
+       
+       
+        <template id="pet-card-template">
+          <div class="pet-card">
+            <div class="card-text">
+              <h3>Barksalot</h3>
+              <p>
+                Barksalot is a sweet and lovable 3 year old ball of fluff. He loves carrots, celery, and playing fetch. lorem
+              </p>
+              <p class="pet-age">2 years old</p>
+            </div>
+            <img src="./images/dog-1.jpg" alt="Pet 1" />
           </div>
-          <img src="./images/dog-1.jpg" alt="Pet 1" />
-        </div>
+        </template>
 
         
-        <div class="pet-card">
-          <div class="card-text">
-            <h3>Meowsalot</h3>
-            <p>
-            Meowsalot is the most talkative cat we’ve ever come across. Constant meowing, chirping and purring!
-          </p>
-          <p class="pet-age">2 years old</p>
-          </div>
-          <img src="./images/cat-1.jpg" alt="" />
-        </div>
-
-
-        <div class="pet-card">
-          <div class="card-text">
-            <h3>Woof</h3>
-            <p>
-            Woof is a very talkative and sweet pup. She loves beets, plums, cuddles and jumping over.
-          </p>
-          <p class="pet-age">2 years old</p>
-          </div>
-          <img src="./images/dog-2.jpg" alt="" />
-        </div>
-        <div class="pet-card">
-          <div class="card-text">
-            <h3>Purrsloud</h3>
-            <p>
-             Purrsloud has the loudest and most relaxing purr  yourself. lorem
-            </p>
-            <p class="pet-age">2 years old</p>
-          </div>
-          <img src="./images/cat-2.jpg" alt="" />
-        </div>
+       
       </div>
     </section>
 
