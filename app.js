@@ -17,7 +17,7 @@ const petsData = async () => {
   const data = await res.json();
   console.log(data);
   data.forEach((pet) => {
-    const petPhoto = !pet.photo ? "./images/Fallback.jpg" : pet.photo;
+    const petPhoto = !pet.photo ? "./images/fallback.jpg" : pet.photo;
     const clone = template.content.cloneNode(true);
 
     clone.querySelector("h3").textContent = pet.name;
