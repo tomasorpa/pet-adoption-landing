@@ -4,7 +4,7 @@ html {
   margin: 0;
   background: #ffffff;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -24,11 +24,10 @@ p {
 }
 h1 {
   font-weight: 700;
- font-size: 4rem;
+  font-size: 4rem;
   line-height: 97.3%;
   max-width: 525px;
 }
-
 
 .container-btns {
   margin: 50px 0 70px;
@@ -41,7 +40,7 @@ header {
 .top-section-wrapper {
   background-color: #001d37;
   padding: 70px 30px;
-  
+
   overflow: hidden;
   position: relative;
 }
@@ -59,9 +58,9 @@ header {
   font-weight: 600;
   border-radius: 71px;
   text-decoration: none;
-  transition: all .3s ease-out ;
+  transition: all 0.3s ease-out;
 }
-.our-btn:hover{
+.our-btn:hover {
   background-color: #3443c5;
 }
 .our-btn--outline {
@@ -69,13 +68,13 @@ header {
   border: 2px #ffffff solid;
   margin-left: 11px;
 }
-.our-btn--outline:hover{
-background-color: white;
-color: #475aff;
+.our-btn--outline:hover {
+  background-color: white;
+  color: #475aff;
 }
 .intro-features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
 }
 .intro-feature {
@@ -83,16 +82,12 @@ color: #475aff;
   padding: 33px 25px;
 }
 
-
-
 .page-section {
   color: black;
   max-width: 1066px;
   margin: 0 auto;
- padding: 70px 30px;
+  padding: 70px 30px;
 }
-
-
 
 .intro-feature p {
   font-size: 17px;
@@ -125,16 +120,26 @@ color: #475aff;
 .pet-filter {
   color: #9f9f9f;
   display: flex;
-  font-size: .9rem;
+  font-size: 0.9rem;
   align-items: center;
   gap: 0.3rem;
   margin-bottom: 1.5rem;
 }
+.pet-filter .active {
+  color: #475aff;
+  text-decoration: underline;
+}
 .pet-filter button {
   color: #9f9f9f;
-  font-size: .9rem;
+  font-size: 0.9rem;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+    transition: color 0.2s ease,text-decoration  0.2s ease;
+}
+
+.pet-filter button:hover {
+  color: #626262;
 }
 .site-footer {
   margin: 137px 0 69px;
@@ -145,7 +150,7 @@ color: #475aff;
 }
 .pet-cards--container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 .pet-card {
@@ -184,96 +189,94 @@ color: #475aff;
 }
 /* 44 7 */
 
-
-@media screen and (min-width: 420px){
-.pet-cards--container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 2rem;
-}
+@media screen and (min-width: 420px) {
+  .pet-cards--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
   .pet-filter {
-  color: #9f9f9f;
-  display: flex;
-  font-size: 22px;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-.pet-filter button {
-  color: #9f9f9f;
-  font-size: 22px;
-  border: none;
-  background-color: transparent;
-}
+    color: #9f9f9f;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .pet-filter button {
+    color: #9f9f9f;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+  }
   .card-text h3 {
-  font-size: 26px;
-  font-weight: 600;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .card-text p {
+    color: #626262;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
-.card-text p {
-  color: #626262;
-  font-size: 16px;
-  line-height: 150%;
-}
-}
-@media screen and (min-width: 820px){
+@media screen and (min-width: 820px) {
   .card-text h3 {
-  font-size: 26px;
-  font-weight: 600;
-}
-.card-text p {
-  color: #626262;
-  font-size: 16px;
-  line-height: 150%;
-}
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .card-text p {
+    color: #626262;
+    font-size: 16px;
+    line-height: 150%;
+  }
   .pet-card {
-  border: 1px solid #f3f3f3;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 2px 2px 5px 0px #0000001d;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 30px;
-  padding-right: 30px;
-}
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 0px #0000001d;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    padding-right: 30px;
+  }
   .container-btns {
     margin: 50px 0 129px;
   }
   .pet-cards--container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  gap: 2rem;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
   .pet-filter {
-  color: #9f9f9f;
-  display: flex;
-  font-size: 22px;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-.pet-filter button {
-  color: #9f9f9f;
-  font-size: 22px;
-  border: none;
-  background-color: transparent;
-}
+    color: #9f9f9f;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .pet-filter button {
+    color: #9f9f9f;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+  }
   .page-section-title {
-  font-size: 5.31rem;
-}
-  h1{
-     font-size: 6.25rem;   
+    font-size: 5.31rem;
+  }
+  h1 {
+    font-size: 6.25rem;
   }
   .page-section {
-  color: black;
-  max-width: 1066px;
-  margin: 0 auto;
-  padding: 139px 188px;
+    color: black;
+    max-width: 1066px;
+    margin: 0 auto;
+    padding: 139px 188px;
+  }
+  .top-section-wrapper {
+    background-color: #001d37;
+    padding: 139px 188px;
+    overflow: hidden;
+    position: relative;
+  }
 }
-.top-section-wrapper {
-  background-color: #001d37;
-  padding: 139px 188px;
-  overflow: hidden;
-  position: relative;
-}
-}
-
